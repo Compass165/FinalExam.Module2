@@ -1,7 +1,6 @@
 package views;
 
 import controller.CRUD;
-import controller.ProductManager;
 import model.Product;
 import storage.CSV;
 
