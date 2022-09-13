@@ -26,7 +26,7 @@ public class Display {
  static List productList = new CSV().readFile(pathFile);
 
  public void menu() {
-  System.out.println("---------Chương trình quản lý sản phẩm-----------\n1. Xem danh sách\n2. Thêm mới\n3. Cập nhật\n4. Xóa \n5. Sắp xếp\n6. Tìm sản phẩm có giá thấp nhất\n7. ĐỌc File\n8. Ghi file\n9. Thoát\nChọn chức năng:");
+  System.out.println("---------Chương trình quản lý sản phẩm-----------\n1. Xem danh sách\n2. Thêm mới\n3. Cập nhật\n4. Xóa \n5. Sắp xếp\n6. Tìm sản phẩm có giá cao nhất\n7. ĐỌc File\n8. Ghi file\n9. Thoát\nChọn chức năng:");
   while (true) {
    int choice = scanner.nextInt();
    switch (choice) {
@@ -47,7 +47,11 @@ public class Display {
      sort(productList);
      break;
     case SEARCHMAX:
-     search(productList);
+//     search(productList);
+
+     sortByPriceLowToHigh();
+     List<Product> productsListInMain = productList;
+     System.out.println(productsListInMain.get(productsListInMain.size()-1));
      break;
     case READ:
      productList = new CSV().readFile(pathFile);
@@ -127,6 +131,10 @@ public class Display {
   System.out.println("Mời nhập index cần xóa:");
   int index = scanner.nextInt();
   new CRUD().remove(index, list);
+ }
+
+ public void sortByPriceLowToHigh(){
+  productList.sort(Comparator.comparingDouble(Product::getCost));
  }
 
 }
