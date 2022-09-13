@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="971986d1-4ebe-43b8-8ae0-4037e9eb6cc3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/storage/CSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/storage/IOUploadFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Display.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/product.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/product.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/CSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/IOUploadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/IOUploadFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +54,40 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="CSV" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="storage.CSV" />
+      <module name="FinalExam.Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="storage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="views.Main" />
+      <module name="FinalExam.Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="views.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.CSV" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663035795997</updated>
-      <workItem from="1663035797573" duration="2885000" />
+      <workItem from="1663035797573" duration="5450000" />
     </task>
     <servers />
   </component>
