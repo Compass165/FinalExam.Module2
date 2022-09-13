@@ -20,13 +20,24 @@ public class Display {
  static final int SEARCHMAX = 6;
  static final int READ = 7;
  static final int WRITE = 8;
- static final int EXIT = 9;
+ static final int SEARCH = 9;
+ static final int EXIT = 10;
  static Scanner scanner = new Scanner(System.in);
  static Scanner scanner1 = new Scanner(System.in);
  static List productList = new CSV().readFile(pathFile);
 
  public void menu() {
-  System.out.println("---------Chương trình quản lý sản phẩm-----------\n1. Xem danh sách\n2. Thêm mới\n3. Cập nhật\n4. Xóa \n5. Sắp xếp\n6. Tìm sản phẩm có giá cao nhất\n7. ĐỌc File\n8. Ghi file\n9. Thoát\nChọn chức năng:");
+  System.out.println("---------Chương trình quản lý sản phẩm-----------\n1. Xem danh sách" +
+          "\n2. Thêm mới" +
+          "\n3. Cập nhật" +
+          "\n4. Xóa " +
+          "\n5. Sắp xếp" +
+          "\n6. Tìm sản phẩm có giá cao nhất" +
+          "\n7. ĐỌc File" +
+          "\n8. Ghi file" +
+          "\n9. Tìm kiếm sản phẩm theo id" +
+          "\n10. Thoát" +
+          "\nChọn chức năng:");
   while (true) {
    int choice = scanner.nextInt();
    switch (choice) {
@@ -62,6 +73,8 @@ public class Display {
     case EXIT:
      System.exit(0);
      break;
+    case SEARCH:
+     search(productList);
     default:
      System.out.println("Mời nhập lại:");
    }

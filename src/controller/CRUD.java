@@ -19,8 +19,4 @@ public class CRUD implements ICRUD{
         arr.remove(index);
     }
 
-    @Override
-    public void removeall(List arr) {
-        arr.removeAll(arr);
-    }
 }
